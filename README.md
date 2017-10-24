@@ -16,8 +16,9 @@ https://getcomposer.org/download/
 6. Teraz klonujemy projekt
 `git clone https://github.com/Drodevbar/petrol_stations.git`
 7. Nasz projekt znajduje się teraz w katalogu `petrol_stations`
-9. Przechodzimy do owego katalogu i z poziomu lini komend robimy `composer install` 
-10. W celu odpalenia projektu przechodzimy pod adres `localhost/petrol_stations/public`
+9. Przechodzimy do owego katalogu i z poziomu lini komend robimy `composer install`
+10. Teraz generujemy klucz aplikacji `php artisan key:generate`
+11. W celu odpalenia projektu przechodzimy pod adres `localhost/petrol_stations/public`
 
 
 
