@@ -1,11 +1,36 @@
 <script>
     function initMap() {
-        var gdansk = {lat: 54.371616, lng: 18.615194};
-        var sopot = {lat: 54.444083, lng: 18.566736};
+        var points = [
+            {
+                position: new google.maps.LatLng(54.368111, 18.615194)
+            },
+            {
+                position: new google.maps.LatLng(54.371616, 18.566736)
+            }
+        ];
+
+        var directionPoints = [
+            {
+                position: new google.maps.LatLng(54.378111, 18.615194)
+            },
+            {
+                position: new google.maps.LatLng(54.3790111, 18.566736)
+            }
+        ]
+
+        var iconBase = '{{ asset('/images/station.png') }}';
 
         var map = new google.maps.Map(document.getElementById('map'), {
-            center: gdansk,
+            center: points[1].position,
             zoom: 12
+        });
+
+        points.forEach(function (point) {
+            var marker = new google.maps.Marker({
+                position: point.position,
+                icon: iconBase,
+                map: map
+            });
         });
 
         var directionsDisplay = new google.maps.DirectionsRenderer({
@@ -14,8 +39,8 @@
 
         // Set destination, origin and travel mode.
         var request = {
-            destination: sopot,
-            origin: gdansk,
+            destination: directionPoints[0].position,
+            origin: directionPoints[1].position,
             travelMode: 'DRIVING'
         };
 
