@@ -39,7 +39,7 @@
         }
 
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT8kqKnuYYsWu2iqBikdQvCv7TYOBIHdk&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ $apiKey }}&callback=initMap"
             async defer></script>
 </body>
 </html>
