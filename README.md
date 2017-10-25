@@ -24,6 +24,9 @@ https://getcomposer.org/download/
 1. Najpierw musimy utworzyć baze danych, w tym celu przechodzimy pod adres
 `localhost/phpmyadmin` (domyśle dane logowania do modułu phpmyadmin to `root/''`), po lewej stronie klikamy `Nowa`
 2. Naszą bazę danych nazywamy `petrol_stations`, a jako metodę porównywania napisów wybieramy `utf8_polish_ci`
+4. Struktura tabel w naszej bazie danych znajduje się w katalogu `database/migrations` (nas interesuje tylko migracja z jedną tableą -> `...create_stations_table` -> reszta jest domyślnie generowana przez laravela)
+5. Model, który odpowiada za tabele, to `app/Station`
+6. **Aby automatycznie utworzyć u siebie wszystkie potrzebne tabele wystarczy z poziomu konsoli (aktualnie bedac w katalogu projektu) wpisać polecenie `php artisan migrate` - spowoduje to powstanie tabel w bazie `petrol_stations`**
 
 
 
