@@ -20,7 +20,7 @@ https://getcomposer.org/download/
 10. Teraz generujemy klucz aplikacji `php artisan key:generate`
 11. W celu odpalenia projektu przechodzimy pod adres `localhost/petrol_stations/public`
 
-#Integracja z bazą danych:
+# Integracja z bazą danych:
 1. Najpierw musimy utworzyć baze danych, w tym celu przechodzimy pod adres
 `localhost/phpmyadmin` (domyśle dane logowania do modułu phpmyadmin to `root/''`), po lewej stronie klikamy `Nowa`
 2. Naszą bazę danych nazywamy `petrol_stations`, a jako metodę porównywania napisów wybieramy `utf8_polish_ci`
