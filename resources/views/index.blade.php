@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="jumbotron">
-        <h1 id="title">Let's get this shit together boys</h1>
+        <h1 id="title">Let's get this shit done together boys</h1>
     </div>
 
     <div class="row">
