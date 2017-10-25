@@ -28,5 +28,10 @@ https://getcomposer.org/download/
 5. Model, który odpowiada za tabele, to `app/Station`
 6. **Aby automatycznie utworzyć u siebie wszystkie potrzebne tabele wystarczy z poziomu konsoli (aktualnie bedac w katalogu projektu) wpisać polecenie `php artisan migrate` - spowoduje to powstanie tabel w bazie `petrol_stations`**
 
-
+# Zasiewanie bazy danych
+1. Abyśmy wszyscy mogli pracować na wspólnych danych należy *zasiać* swoją bazę danymi dostępnymi w owym projekcie
+    * ścieżka do pliku z danymi `config/stationsdata`
+    * ścieżka do stacjowego seedera `database\seeds\StationsTableSeeder`
+    * odpalenie seedera jest w `database\seeds\DatabaseSeeder`
+2. **Jedyne co należy zrobić, aby dodać dane do swojej bazy danych, to z poziomu konsoli wpisać polecenie `php artisan db:seed`**
 

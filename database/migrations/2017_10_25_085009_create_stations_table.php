@@ -24,10 +24,10 @@ class CreateStationsTable extends Migration
             $table->string('city');
             $table->string('street');
 
-            $table->decimal('pb95', 3,2);
-            $table->decimal('pb98', 3,2);
-            $table->decimal('on', 3,2);
-            $table->decimal('lpg', 3,2);
+            $table->decimal('pb95', 3,2)->nullable();
+            $table->decimal('pb98', 3,2)->nullable();
+            $table->decimal('on', 3,2)->nullable();
+            $table->decimal('lpg', 3,2)->nullable();
         });
     }
 
